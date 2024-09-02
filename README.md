@@ -45,10 +45,10 @@ To run this project locally, follow these steps:
 
 ### Contact Information
 
-- **Facebook**: [[Your Facebook](https://www.facebook.com/mohamed.sharshar.999/)](#)
-- **GitHub**: [[Your GitHub](https://github.com/mohamedsharshar)](#)
-- **LinkedIn**: [[Your LinkedIn](https://www.linkedin.com/in/mohamed-waleed-821452246/)](#)
-- **Instagram**: [[Your Instagram](https://www.instagram.com/mohammed__sharshar/)](#)
+- **Facebook**: [[My Facebook](https://www.facebook.com/mohamed.sharshar.999/)](#)
+- **GitHub**: [[My GitHub](https://github.com/mohamedsharshar)](#)
+- **LinkedIn**: [[My LinkedIn](https://www.linkedin.com/in/mohamed-waleed-821452246/)](#)
+- **Instagram**: [[My Instagram](https://www.instagram.com/mohammed__sharshar/)](#)
 
 ### Contribution
 
