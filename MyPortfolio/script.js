@@ -1,4 +1,9 @@
-AOS.init();
+// Initialize AOS
+AOS.init({
+  duration: 1000,
+  once: true,
+  offset: 100
+});
 // menu
 const mobileMenu = document.getElementById("mobile-menu");
 const navbarMenu = document.querySelector(".navbar-menu");
@@ -28,17 +33,56 @@ filterButtons.forEach((button) => {
     button.classList.add("active");
   });
 });
-// swiper
-const swiper = new Swiper(".swiper-container", {
+// Initialize Swiper
+const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 20,
   loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
   },
-  pagination: false,
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+  },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+      640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+      },
+      768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+      },
+      1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+      },
+  },
+  effect: 'coverflow',
+  coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+  },
+  keyboard: {
+      enabled: true,
+      onlyInViewport: true,
+  },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      hideOnClick: false,
+  }
 });
+
 // rating
 document.addEventListener("DOMContentLoaded", () => {
   const stars = document.querySelectorAll(".star");
