@@ -1,435 +1,721 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد شرشر - مطور ويب</title>
+    <meta name="description" content="محمد شرشر - مطور ويب فول ستاك بخبرة 3+ سنوات. أقدم خدمات تطوير المواقع والتطبيقات بأحدث التقنيات">
+    <link rel="icon" href="./imgs/White3.png" type="image/png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Libraries -->
+    <link href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portfolio Website</title>
-        <link rel="icon" href="./imgs/White3.png" sizes="580x580"
-            type="image/png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&display=swap"
-            rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet"
-            href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="all.min.css">
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>جاري التحميل...</p>
+    </div>
 
-    <body>
-        <nav class="navbar">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="navbar-brand">
+                <img src="./imgs/White2.png" alt="شعار محمد شرشر">
+                <h1>محمد شرشر</h1>
+            </div>
+            
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                <li><a href="#about" class="nav-link">نبذة عني</a></li>
+                <li><a href="#projects" class="nav-link">المشاريع</a></li>
+                <li><a href="#skills" class="nav-link">المهارات</a></li>
+                <li><a href="#services" class="nav-link">الخدمات</a></li>
+                <li><a href="#contact" class="nav-link">التواصل</a></li>
+            </ul>
+            
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-            <div class="disp">
-                <div class="navbar-brand" data-aos="fade-up">
-                    <img src="./imgs/White2.png">
-                    <h1>Sharshar</h1>
+    <!-- Main Content -->
+    <main class="main-content">
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-up">
+                    <span class="hero-greeting">أهلاً وسهلاً</span>
+                    <h1>أنا محمد شرشر</h1>
+                    <h2>مطور ويب فول ستاك</h2>
+                    <p>بخبرة تزيد عن 3 سنوات في تطوير المواقع والتطبيقات، أتخصص في إنشاء مواقع جميلة وفعالة وسهلة الاستخدام باستخدام أحدث التقنيات.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">مشاهدة الأعمال</a>
+                        <a href="#contact" class="btn btn-outline">تواصل معي</a>
+                    </div>
                 </div>
-                <div class="navbar-toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="hero-img-container">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="محمد شرشر">
+                        <div class="hero-img-bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>تابع القراءة</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>نبذة عني</h2>
+                <p>تعرف على مسيرتي المهنية وخبراتي</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>مطور ويب شغوف بالتميز</h3>
+                    <p>أعمل في مجال تطوير الويب منذ أكثر من 3 سنوات، حيث قمت بتطوير العديد من المواقع والتطبيقات للشركات والأفراد. أتميز بالاهتمام بالتفاصيل والسعي للكمال في كل مشروع.</p>
+                    
+                    <div class="experience-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="50">0</span>
+                            <span class="stat-label">مشروع مكتمل</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="3">0</span>
+                            <span class="stat-label">سنوات خبرة</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="25">0</span>
+                            <span class="stat-label">عميل سعيد</span>
+                        </div>
+                    </div>
+                    
+                    <a href="./Mohamedsharshar resume.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i>
+                        تحميل السيرة الذاتية
+                    </a>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80" alt="محمد شرشر">
+                </div>
+            </div>
+        </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>معرض الأعمال</h2>
+                <p>مشاريع متنوعة تعكس خبرتي في مختلف مجالات تطوير الويب</p>
+            </div>
+
+            <!-- Project Filter -->
+            <div class="project-filter" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="web">مواقع ويب</button>
+                <button class="filter-btn" data-filter="ecommerce">متاجر إلكترونية</button>
+                <button class="filter-btn" data-filter="systems">أنظمة إدارة</button>
+                <button class="filter-btn" data-filter="mobile">تطبيقات موبايل</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" data-aos="fade-up" data-aos-delay="200">
+                <!-- Project 1 -->
+                <div class="project-item" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" alt="موقع شركة تقنية" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-action btn-view" title="عرض التفاصيل">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://example1.com" target="_blank" class="btn-action" title="مشاهدة المشروع">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>موقع شركة تقنية متطور</h3>
+                        <p>موقع احترافي متكامل لشركة تقنية رائدة مع لوحة تحكم إدارية شاملة، نظام إدارة محتوى ديناميكي، وتصميم متجاوب يدعم جميع الأجهزة. يتضمن نظام حجز المواعيد وعرض الخدمات التفاعلي.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item" data-category="ecommerce">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=500&q=80" alt="متجر إلكتروني" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-action btn-view" title="عرض التفاصيل">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://example2.com" target="_blank" class="btn-action" title="مشاهدة المشروع">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>متجر إلكتروني متكامل</h3>
+                        <p>منصة تجارة إلكترونية احترافية مع نظام دفع آمن متعدد البوابات، إدارة متقدمة للمخزون والطلبات، برنامج ولاء للعملاء، وتقارير مبيعات تفصيلية. يدعم الشحن المحلي والدولي مع تتبع الطلبات في الوقت الفعلي.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item" data-category="systems">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=500&q=80" alt="نظام إدارة المشاريع" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-action btn-view" title="عرض التفاصيل">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://example3.com" target="_blank" class="btn-action" title="مشاهدة المشروع">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>نظام إدارة المشاريع الذكي</h3>
+                        <p>منصة متطورة لإدارة المشاريع والفرق مع أدوات التعاون في الوقت الفعلي، تتبع الوقت والإنتاجية، إنشاء التقارير التلقائية، وإشعارات ذكية. يدعم منهجيات Agile و Scrum مع لوحات Kanban التفاعلية.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Pusher</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-item" data-category="systems">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=500&q=80" alt="نظام إدارة العيادات" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-action btn-view" title="عرض التفاصيل">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://example4.com" target="_blank" class="btn-action" title="مشاهدة المشروع">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>نظام إدارة العيادات الطبية</h3>
+                        <p>نظام متكامل لإدارة العيادات والمستشفيات يشمل حجز المواعيد الإلكتروني، إدارة ملفات المرضى، نظام الفوترة الطبية، وتقارير مالية شاملة. يدعم الوصفات الطبية الإلكترونية والتذكيرات التلقائية.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">CodeIgniter</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">jQuery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-item" data-category="web">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?auto=format&fit=crop&w=500&q=80" alt="منصة تعليمية" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-action btn-view" title="عرض التفاصيل">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://example5.com" target="_blank" class="btn-action" title="مشاهدة المشروع">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>منصة التعلم الإلكتروني الذكية</h3>
+                        <p>منصة تعليمية شاملة للكورسات الأونلاين مع نظام تتبع التقدم الذكي، اختبارات تفاعلية، غرف دردشة مباشرة، ونظام شهادات معتمدة. تدعم التعلم التكيفي والذكاء الاصطناعي لتخصيص المحتوى لكل طالب.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">WebRTC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-item" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=500&q=80" alt="تطبيق موبايل للتوصيل" loading="lazy">
+                        <div class="project-overlay">
+                            <div class="project-actions">
+                                <button class="btn-action btn-view" title="عرض التفاصيل">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="https://example6.com" target="_blank" class="btn-action" title="مشاهدة المشروع">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>تطبيق التوصيل السريع</h3>
+                        <p>تطبيق موبايل متطور لخدمات التوصيل مع تتبع الطلبات في الوقت الفعلي، نظام تقييم متقدم، محفظة إلكترونية، وإشعارات ذكية. يدعم التوصيل متعدد الفئات مع خوارزميات توجيه محسنة.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Google Maps</span>
+                            <span class="tech-tag">Stripe</span>
+                            <span class="tech-tag">OneSignal</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <ul class="navbar-menu" data-aos="fade-up">
-                <li class="navbar-item"><a href="#home"
-                        class="navbar-link">Home</a></li>
-                <li class="navbar-item"><a href="#projects"
-                        class="navbar-link">Projects</a></li>
-                <li class="navbar-item"><a href="#section3"
-                        class="navbar-link">Skills</a></li>
-                <li class="navbar-item"><a href="#section4"
-                        class="navbar-link">Rate Me</a></li>
-                <li class="navbar-item"><a href="#section5"
-                        class="navbar-link">Services</a></li>
-                <li class="navbar-item"><a href="#section6"
-                        class="navbar-link">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- ############################################################################## -->
-     
-         <!-- Hero Section -->
-    <section id="home" class="hero">
+            <div class="load-more-container" data-aos="fade-up">
+                <button class="btn btn-outline" id="load-more-btn">عرض المزيد من الأعمال</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Hi, I'm Mohamed Sharshar</h1>
-                    <h2>Fullstack Web Developer</h2>
-                    <p>With over 3 years of experience in web development, I specialize in creating beautiful, functional, and user-friendly websites.</p>
-                    <a href="#section6" class="cta-button">Get in Touch</a>
+            <div class="section-header" data-aos="fade-up">
+                <h2>المهارات التقنية</h2>
+                <p>التقنيات والأدوات التي أتقنها في تطوير المشاريع</p>
+            </div>
+
+            <div class="skills-categories">
+                <!-- Frontend Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-paint-brush"></i> Frontend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="./imgs/html5.svg" alt="HTML5">
+                            <span>HTML5</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./imgs/css.svg" alt="CSS3">
+                            <span>CSS3</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./imgs/Javascript.png" alt="JavaScript">
+                            <span>JavaScript</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./imgs/react.svg" alt="React">
+                            <span>React</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="80%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero-image">
-                    <div class="image-container">
-                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Developer">
+
+                <!-- Backend Skills -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="./imgs/php.svg" alt="PHP">
+                            <span>PHP</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./imgs/laravel-svgrepo-com.svg" alt="Laravel">
+                            <span>Laravel</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./imgs/mysql.svg" alt="MySQL">
+                            <span>MySQL</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./imgs/python.svg" alt="Python">
+                            <span>Python</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Frameworks -->
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3><i class="fas fa-tools"></i> Tools & Frameworks</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img src="./imgs/git.svg" alt="Git">
+                            <span>Git</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./imgs/github.svg" alt="GitHub">
+                            <span>GitHub</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./imgs/bootstrap.svg" alt="Bootstrap">
+                            <span>Bootstrap</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./imgs/tailwind.svg" alt="Tailwind">
+                            <span>Tailwind</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" data-width="80%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-        <!-- ############################################################################## -->
-      
- <!-- Projects Section -->
- <section id="projects" class="projects">
-    <div class="container">
-        <h2 data-aos="fade-up">Recent Projects</h2>
-        
-        <!-- Swiper Container -->
-        <div class="swiper-container" data-aos="fade-up" data-aos-delay="200">
-            <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="./imgs/Projects/web3.png" alt="MaxedMedia Website">
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>الخدمات المقدمة</h2>
+                <p>خدمات شاملة في مجال تطوير الويب والتطبيقات</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>تطوير المواقع</h3>
+                    <p>تصميم وتطوير مواقع الويب المتجاوبة والحديثة باستخدام أحدث التقنيات والمعايير العالمية.</p>
+                    <ul class="service-features">
+                        <li>تصميم متجاوب</li>
+                        <li>أداء محسن</li>
+                        <li>SEO متقدم</li>
+                        <li>أمان عالي</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>المتاجر الإلكترونية</h3>
+                    <p>إنشاء متاجر إلكترونية متكاملة مع أنظمة الدفع الآمنة وإدارة المخزون والطلبات.</p>
+                    <ul class="service-features">
+                        <li>بوابات دفع متعددة</li>
+                        <li>إدارة المخزون</li>
+                        <li>نظام الطلبات</li>
+                        <li>تقارير مبيعات</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>أنظمة الإدارة</h3>
+                    <p>تطوير أنظمة إدارة مخصصة للشركات والمؤسسات لتسهيل العمليات الإدارية.</p>
+                    <ul class="service-features">
+                        <li>إدارة الموظفين</li>
+                        <li>نظام التقارير</li>
+                        <li>إدارة العملاء</li>
+                        <li>تحليل البيانات</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>تطبيقات الموبايل</h3>
+                    <p>تطوير تطبيقات الهاتف المحمول للأندرويد و iOS بتقنيات حديثة ومتطورة.</p>
+                    <ul class="service-features">
+                        <li>React Native</li>
+                        <li>Flutter</li>
+                        <li>تطبيقات هجينة</li>
+                        <li>API Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>تواصل معي</h2>
+                <p>دعنا نتحدث حول مشروعك القادم</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
                         </div>
-                        <div class="project-content">
-                            <h3>MaxedMedia Website Portfolio 1</h3>
-                            <p>Creating a blog website with dynamic content management system using web tools and custom plugins.</p>
-                            <a href="https://maxedmedia2.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
+                        <div class="contact-details">
+                            <h4>رقم الهاتف</h4>
+                            <a href="tel:+201003831471">+20 100 383 1471</a>
                         </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>البريد الإلكتروني</h4>
+                            <a href="mailto:mmshsh05@gmail.com">mmshsh05@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>الموقع</h4>
+                            <span>مصر، القاهرة</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://wa.me/201003831471" target="_blank" class="social-link whatsapp" title="تواصل معي على الواتساب">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/mohamed.sharshar.999/" target="_blank" class="social-link facebook" title="زر صفحتي على فيسبوك">
+                            <i class="fab fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/mohamedsharshar" target="_blank" class="social-link github" title="شاهد أعمالي على جيت هب">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohamed-waleed-821452246/" target="_blank" class="social-link linkedin" title="تواصل معي على لينكد إن">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mohammed__sharshar/" target="_blank" class="social-link instagram" title="تابعني على انستجرام">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
 
-                <!-- Slide 2 -->
-                <div class="swiper-slide">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="./imgs/Maxed.png" alt="MaxedMedia Website 2">
-                        </div>
-                        <div class="project-content">
-                            <h3>MaxedMedia Website Portfolio 2</h3>
-                            <p>Designing a company's portfolio, implementing a chatbot, and creating an automated communication form.</p>
-                            <a href="https://mohamedsharshar.github.io/Maxedmedia-Website3/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
-                        </div>
+                <form class="contact-form" data-aos="fade-left" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="الاسم الكامل" required>
+                        <i class="fas fa-user"></i>
                     </div>
-                </div>
+                    
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="رقم الهاتف">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select name="subject" title="نوع الخدمة المطلوبة" required>
+                            <option value="">اختر الخدمة</option>
+                            <option value="web-development">تطوير موقع</option>
+                            <option value="ecommerce">متجر إلكتروني</option>
+                            <option value="mobile-app">تطبيق موبايل</option>
+                            <option value="consultation">استشارة تقنية</option>
+                            <option value="other">أخرى</option>
+                        </select>
+                        <i class="fas fa-list"></i>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <textarea name="message" placeholder="تفاصيل المشروع أو الرسالة" rows="5" required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        إرسال الرسالة
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-                <!-- Slide 3 -->
-                <div class="swiper-slide">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="./imgs/Projects/web2.png" alt="Mokafht-Hashrat">
-                        </div>
-                        <div class="project-content">
-                            <h3>Mokafht-Hashrat</h3>
-                            <p>Building a secure admin system with encryption and developing a complete company website.</p>
-                            <a href="https://mokafht-hashrat.site/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
-                        </div>
-                    </div>
+    </main> <!-- نهاية المحتوى الرئيسي -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>محمد شرشر</h3>
+                    <p>مطور ويب فول ستاك متخصص في إنشاء حلول ويب مبتكرة وعملية.</p>
                 </div>
-                <div class="swiper-slide">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mokafht-Hashrat">
-                        </div>
-                        <div class="project-content">
-                            <h3>Mokafht-Hashrat</h3>
-                            <p>Building a secure admin system with encryption and developing a complete company website.</p>
-                            <a href="https://mokafht-hashrat.site/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
-                        </div>
-                    </div>
+                
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">نبذة عني</a></li>
+                        <li><a href="#projects">المشاريع</a></li>
+                        <li><a href="#contact">التواصل</a></li>
+                    </ul>
                 </div>
-                <div class="swiper-slide">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mokafht-Hashrat">
-                        </div>
-                        <div class="project-content">
-                            <h3>Mokafht-Hashrat</h3>
-                            <p>Building a secure admin system with encryption and developing a complete company website.</p>
-                            <a href="https://mokafht-hashrat.site/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
-                        </div>
-                    </div>
+                
+                <div class="footer-section">
+                    <h4>الخدمات</h4>
+                    <ul>
+                        <li><a href="#services">تطوير المواقع</a></li>
+                        <li><a href="#services">المتاجر الإلكترونية</a></li>
+                        <li><a href="#services">تطبيقات الموبايل</a></li>
+                        <li><a href="#services">أنظمة الإدارة</a></li>
+                    </ul>
                 </div>
-                <div class="swiper-slide">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Mokafht-Hashrat">
-                        </div>
-                        <div class="project-content">
-                            <h3>Mokafht-Hashrat</h3>
-                            <p>Building a secure admin system with encryption and developing a complete company website.</p>
-                            <a href="https://mokafht-hashrat.site/" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
-                        </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <script>document.write(new Date().getFullYear());</script> محمد شرشر. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                    <div id="modal-tech" class="modal-tech"></div>
+                    <div class="modal-links">
+                        <a id="modal-demo" href="#" target="_blank" class="btn btn-primary">مشاهدة المشروع</a>
+                        <a id="modal-code" href="#" target="_blank" class="btn btn-outline">الكود المصدري</a>
                     </div>
                 </div>
             </div>
-            <!-- Add Navigation -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
         </div>
     </div>
-</section>
 
-        <!-- ############################################################################## -->
-        <div class="section3" id="section3">
-            <div class="container2">
-                <h1>My Info</h1>
-                <div class="disp3">
-                    <div class="info3" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
-                        <h3>About Me</h3>
-                        <p>Experienced Web Developer with over <span>3 years</span> in the industry, <span>specializing</span> in front-end and back-end development. <span>Proficient</span> in HTML, CSS, JavaScript, Bootstrap, TailWind, PHP, MYSQL, React, Laravel</p>
-                        <br>
-                        <div class="cv">
-                            <a href="Mohamedsharshar resume.pdf" target="_blank" download>Download CV</a>
-                        </div>
-                    </div>
-                    <div class="img3"><img data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" src="./imgs/enhanced-removebg-preview.png" alt="Profile"></div>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Chatbot -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <div class="chatbot-avatar">
+                <i class="fas fa-robot"></i>
+            </div>
+            <div class="chatbot-title">
+                <h4>محمد شرشر</h4>
+                <span>مطور ويب | متاح الآن</span>
+            </div>
+            <button id="close-chatbot" class="close-chatbot">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
                 </div>
-                <div class="skills">
-                    <h1>Skills</h1>
-                    <div class="skilldisp">
-                        <div class="skillsbox" data-aos="fade-down">
-                            <img src="./imgs/html5.svg" alt="HTML">
-                            <span>HTML</span>
-                        </div>
-                        <div class="skillsbox" data-aos="fade-down" data-aos-delay="100">
-                            <img src="./imgs/css.svg" alt="CSS">
-                            <span>CSS</span>
-                        </div>
-                        <div class="skillsbox" data-aos="fade-down" data-aos-delay="200">
-                            <img src="./imgs/Javascript.png" alt="JavaScript">
-                            <span>JS</span>
-                        </div>
-                        <div class="skillsbox" data-aos="fade-down" data-aos-delay="300">
-                            <img src="./imgs/php.svg" alt="PHP">
-                            <span>PHP</span>
-                        </div>
-                        <div class="skillsbox" data-aos="fade-down" data-aos-delay="400">
-                            <img src="./imgs/mysql.svg" alt="MySQL">
-                            <span>MySQL</span>
-                        </div>
-                        <div class="skillsbox" data-aos="fade-down" data-aos-delay="500">
-                            <img src="./imgs/git.svg" alt="Git">
-                            <span>Git</span>
-                        </div>
-                        <div class="skillsbox" data-aos="fade-down" data-aos-delay="600">
-                            <img src="./imgs/github.svg" alt="GitHub">
-                            <span>GitHub</span>
-                        </div>
-                        <div class="skillsbox" data-aos="fade-down" data-aos-delay="700">
-                            <img src="./imgs/python.svg" alt="Python">
-                            <span>Python</span>
-                        </div>
-                        <div class="skillsbox" data-aos="fade-down" data-aos-delay="800">
-                            <img src="./imgs/tailwind.svg" alt="TailWind">
-                            <span>TailWind</span>
-                        </div>
-                        <div class="skillsbox" data-aos="fade-down" data-aos-delay="900">
-                            <img src="./imgs/bootstrap.svg" alt="Bootstrap">
-                            <span>Bootstrap</span>
-                        </div>
-                        <div class="skillsbox" data-aos="fade-down" data-aos-delay="1000">
-                            <img src="./imgs/laravel-svgrepo-com.svg" alt="Laravel">
-                            <span>Laravel</span>
-                        </div>
-                        <div class="skillsbox" data-aos="fade-down" data-aos-delay="1100">
-                            <img src="./imgs/react.svg" alt="React">
-                            <span>React</span>
-                        </div>
-                    </div>
+                <div class="message-content">
+                    <p>مرحباً! أنا محمد شرشر، مطور ويب متخصص. كيف يمكنني مساعدتك؟</p>
+                    <span class="message-time">الآن</span>
                 </div>
             </div>
         </div>
-        <!-- ############################################################################## -->
-        <div class="section4" id="section4">
-            <div class="container2">
-                <h1>Rate Us</h1>
-                <div class="video-background" data-aos="fade-up">
-                    <video autoplay loop muted playsinline>
-                        <source src="./imgs/vid1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+        
+        <div class="quick-replies" id="quick-replies">
+            <button class="quick-reply" data-message="أريد معرفة خدماتك">خدماتي</button>
+            <button class="quick-reply" data-message="أريد رؤية أعمالك">أعمالي</button>
+            <button class="quick-reply" data-message="كيف يمكنني التواصل معك؟">تواصل معي</button>
+            <button class="quick-reply" data-message="كم سعر تطوير موقع؟">الأسعار</button>
+        </div>
+        
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="اكتب رسالتك هنا..." autocomplete="off">
+            <button id="send-message" class="send-button">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
 
-                <form action="https://formspree.io/f/mldrkdoq" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-                    <div class="ratingus">
-                        <div class="rating-container">
-                            <div class="stars">
-                                <input type="hidden" name="entry.your_field_id" id="rating-input">
-                                <span class="star" data-value="1" data-aos="fade-up" data-aos-delay="10">&#9733;</span>
-                                <span class="star" data-value="2" data-aos="fade-up" data-aos-delay="20">&#9733;</span>
-                                <span class="star" data-value="3" data-aos="fade-up" data-aos-delay="30">&#9733;</span>
-                                <span class="star" data-value="4" data-aos="fade-up" data-aos-delay="40">&#9733;</span>
-                                <span class="star" data-value="5" data-aos="fade-up" data-aos-delay="50">&#9733;</span>
-                            </div>
-                            <button type="submit" id="ratbtn" class="submit-btn">Submit Rating</button>
-                        </div>
-                    </div>
-                </form>
-                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    <!-- Chatbot Toggle Button -->
+    <button id="chatbot-toggle" class="chatbot-toggle">
+        <i class="fas fa-comments"></i>
+        <span class="notification-badge" id="notification-badge">1</span>
+    </button>
 
-            </div>
-        </div>
-
-        <!-- ############################################################################## -->
-        <div class="section5" id="section5">
-            <div class="container2">
-                <h1>Services</h1>
-                <div class="services">
-                    <div class="service_box" data-aos="fade-up">
-                        <article class="service_card">
-                            <i class="fa-solid fa-code fa-flip-both fa-2xl"
-                                style="color: #7386CC;"></i>
-                            <h3>Web Development</h3>
-                            <p>Specializing in the design, development, and
-                                maintenance of web applications. Proficient in a
-                                variety of technologies to create robust and
-                                scalable web solutions tailored to meet specific
-                                business needs.</p>
-                        </article>
-                    </div>
-                    <div class="service_box" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <article class="service_card">
-                            <i class="fa-solid fa-pen-ruler fa-2xl"
-                                style="color: #7386CC;"></i>
-                            <h3>Web Design</h3>
-                            <p>Skilled in crafting aesthetically pleasing and
-                                user-friendly web designs. Focused on enhancing
-                                user experience through intuitive layouts and
-                                engaging visuals.</p>
-                        </article>
-                    </div>
-                    <div class="service_box" data-aos="fade-up"
-                        data-aos-delay="200">
-                        <article class="service_card">
-                            <img src="./imgs/icons8-layout-50.png" alt>
-                            <h3>Fullstack Development</h3>
-                            <p>Experienced in both front-end and back-end
-                                development, capable of building complete web
-                                applications from the ground up. Expertise in
-                                various technologies, including HTML, CSS,
-                                JavaScript, and server-side programming.</p>
-                        </article>
-                    </div>
-                    <div class="service_box" data-aos="fade-up"
-                        data-aos-delay="300">
-                        <article class="service_card">
-                            <i class="fa-solid fa-robot fa-2xl"
-                                style="color: #7386CC;"></i>
-                            <h3>AI Services</h3>
-                            <p>Leveraging artificial intelligence and machine
-                                learning to provide data-driven insights and
-                                solutions. Expertise in analyzing complex
-                                datasets to uncover patterns and drive
-                                intelligent decision-making.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ############################################################################## -->
-        <div class="certifications" id="certifications">
-            <div class="container2">
-                <h1>Certifications</h1>
-                <div class="certifications-gallery">
-                    <div class="certification-item">
-                        <img src="./imgs/cert1.jpg" alt="Certification 1">
-                    </div>
-                    <div class="certification-item">
-                        <img src="./imgs/cert2.jpeg" alt="Certification 2">
-                    </div>
-                    <div class="certification-item">
-                        <img src="./imgs/cert3.jpg" alt="Certification 3">
-                    </div>
-                    <!-- Add more certifications as needed -->
-                </div>
-            </div>
-        </div>
-
-        <!-- ############################################################################## -->
-        <div class="section6" id="section6">
-            <div class="container2">
-                <h1>Contact Me</h1>
-                <div class="contact">
-                    <form class="contact_form" id="contact_form" data-aos="zoom-in">
-                        <div class="contact_group">
-                            <input type="text" name="user_name" id="name" placeholder="Name" required>
-                            <input type="email" name="user_email" id="email" placeholder="Email" required>
-                        </div>
-                        <div class="messaagee">
-                            <textarea name="user_message" id="message" required placeholder="Message"></textarea>
-                        </div>
-                        <div class="button">
-                            <button type="submit">Send Message</button>
-                        </div>
-                        <div class="contact_message">
-                            <p id="contact_message"></p>
-                        </div>
-                    </form>
-                    <div class="contact_social">
-                        <a href="https://www.facebook.com/mohamed.sharshar.999/" class="social_link" target="_blank">
-                            <i class="fa-brands fa-facebook fa-lg"></i>
-                            <span>Facebook</span>
-                        </a>
-                        <a href="https://github.com/mohamedsharshar" class="social_link" target="_blank">
-                            <i class="fa-brands fa-github fa-lg"></i>
-                            <span>GitHub</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/mohamed-waleed-821452246/" class="social_link" target="_blank">
-                            <i class="fa-brands fa-linkedin fa-lg"></i>
-                            <span>Linkedin</span>
-                        </a>
-                        <a href="https://www.instagram.com/mohammed__sharshar/" class="social_link" target="_blank">
-                            <i class="fa-brands fa-instagram fa-lg"></i>
-                            <span>Instagram</span>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- ############################################################################## -->
-        <div class="footer">
-            <div class="container2">
-                <div class="footer_cont">
-                    <ul class="footer_link">
-                        <li><a href="#section1">Home</a></li>
-                        <li><a href="#section2">Work</a></li>
-                        <li><a href="#section3">Info</a></li>
-                    </ul>
-                    <span>&#169; All Rights Reversed By Mohamed Sharshar</span>
-                </div>
-            </div>
-        </div>
-        <!-- ############################################################################## -->
-        <div id="chatbot-container" class="chatbot">
-            <div id="chat-header">
-                Chat with Me!
-                <button id="close-chat-btn">&times;</button>
-            </div>
-            <div id="chat-body">
-                <div id="messages"></div>
-                <input type="text" id="chat-input"
-                    placeholder="Type your message..." />
-                <button id="send-btn">Send</button>
-            </div>
-        </div>
-        <div class="message-btn" id="mesgbtn">
-            <img src="./imgs/chat-bot-svgrepo-com.svg" width="50" alt="bot">
-        </div>
-
-        <!-- ############################################################################## -->
-        <div class="dsipbtn">
-            <button class="upbtn" id="up"><i class="fa-solid fa-arrow-up fa-lg"
-                    style="color: #fcfcfc;"></i></button>
-        </div>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="all.min.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-        <script src="script.js"></script>
-    </body>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
 
 </html>
